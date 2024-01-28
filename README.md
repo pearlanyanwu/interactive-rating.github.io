@@ -11,7 +11,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued Development](#continued-development)
 
 ## Overview
 
@@ -29,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-Live Site URL: []
+Live Site URL: [https://pearlanyanwu.github.io/interactive-rating.github.io/]
 
 ## My process
 
