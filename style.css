@@ -2,45 +2,76 @@
 
 body {
   background-color: hsl(216, 12%, 8%);
+  padding-top: 250px;
 }
 
 * {
   font-family: 'Overpass', sans-serif;
 }
 
-.container-1,
-.container-2 {
-  height: 400px;
-  width: 400px;
+body > div {
   background-color: hsl(213, 19%, 18%);
-  border-radius: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 25px 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.container-2 {
+  text-align: center;
+  display: none;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h2,
+input:hover,
+button {
+  color: hsl(0, 0%, 100%);
+}
+
+p,
+input {
+  color: hsl(217, 12%, 63%);
 }
 
 #star-img {
   padding: 15px;
 }
 
+input {
+  padding: 15px 20px;
+}
+
+input:hover,
 button {
-  text-transform: uppercase;
   background-color: hsl(25, 97%, 53%);
-  width: 87%;
-  padding: 15px 0;
-  letter-spacing: 2px;
 }
 
-#star-img,
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+
+input,
 button {
-  margin-left: 2em;
+  border-style: none;
 }
 
-#star-img,
-button,
-.review {
+button {
   margin-top: 2em;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.review {
+  margin: 1em auto;
+  width: 60%;
+  padding: 7px 5px;
+  color: hsl(25, 97%, 53%);
 }
 
 #star-img,
@@ -53,107 +84,12 @@ button,
 #star-img,
 input,
 .review {
-  background-color: hsl(214, 20%, 22%);
-}
-
-.container-1 h1 {
-  margin-left: 1.2em;
-}
-
-.container-1 h1,
-input {
-  margin-top: 1em;
-}
-
-h1,
-input:hover,
-button {
-  color: hsl(0, 0%, 100%);
-}
-
-h1,
-button {
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 25px;
-}
-
-.container-1 p {
-  margin-left: 3em;
-  color: hsl(216, 12%, 54%);
-  line-height: 2em;
-  font-size: 10px;
-  width: 85%;
+  background-color: hsla(216, 12%, 54%, 0.1);
 }
 
 .flex-container {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 0 15px;
-}
-
-input {
-  padding: 15px 22px;
-  color: hsl(217, 12%, 63%);
-  font-size: 16px;
-}
-
-input,
-button {
-  transition-duration: 0.2s;
-  border-style: none;
-}
-
-input:hover {
-  background-color: hsl(25, 97%, 53%) !important;
-}
-
-input:hover,
-button:hover {
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: hsl(0, 0%, 100%);
-}
-
-button:hover,
-.review {
-  color:hsl(25, 97%, 53%);
-}
-
-.container-2 {
-  display: none;
-}
-
-#thanks-img {
-  margin-left: 6.5em;
-  margin-top: 3em;
-}
-
-.review {
-  padding: 5px 0;
-  width: 60%;
-  margin-left: 5em;
-  font-size: 15px;
-}
-
-.review,
-.container-2 h1,
-.container-2 p {
-  text-align: center;
-}
-
-.container-2 h1 {
-  margin-top: 1.5em;
-}
-
-.container-2 p {
-  width: 90%;
-  margin-left: 1em;
-  color: hsl(214, 10%, 54%);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
